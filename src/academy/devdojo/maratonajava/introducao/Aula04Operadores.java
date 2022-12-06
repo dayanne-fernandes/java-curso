@@ -23,5 +23,41 @@ public class Aula04Operadores {
         System.out.println(" isDezigualVinte "+ isDezigualVinte);
         System.out.println(" isDezigualdez "+ isDezigualdez);
         System.out.println(" isDiferentedez "+ isDiferentedez);
+
+        // && (AND) // (or) !
+        int idade = 29;
+        float salario = 3500F;
+        boolean isDentrodaLeiMaiorqueTrinta = idade > 30 && salario >= 4612;
+        boolean isDentrodaLeiMenorqueTrinta = idade < 30 && salario >= 3381;
+        System.out.println("isDentrodaLeiMaiorqueTrinta "+isDentrodaLeiMaiorqueTrinta);
+        System.out.println("isDentrodaLeiMenorqueTrinta "+isDentrodaLeiMenorqueTrinta);
+
+        double valorTotalContaCorrente = 200;
+        double valorTotalContaPoupanca = 10000;
+        float valorPlaystation = 5000F;
+        boolean isPlaystationCincoCompravel = valorTotalContaCorrente > valorPlaystation || valorTotalContaPoupanca > valorPlaystation;
+        System.out.println("isPlaystationCincoCompravel "+isPlaystationCincoCompravel);
+
+        // = += -= *= /= %=
+        double bonus = 1800;
+        bonus += 1000;
+        bonus -=1000;
+        bonus *=2;
+        bonus /=2;
+        bonus %=2;
+        System.out.println(bonus);
+
+        //
+        int contador =0;
+        contador += 1; // contador = contador + 1;
+        contador++;
+        contador--;
+        ++contador;
+        --contador;
+        int contador2 = 0;
+        System.out.println(++contador2);
+
+
+
     }
 }
